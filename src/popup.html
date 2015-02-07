@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<style type="text/css">
+    .popup-body {
+        width: 200px;
+    }
+    h5 {
+        margin: 0px auto 8px auto;
+    }
+    .controls {
+        padding: 0px 6px 8px 6px;
+    }
+    label {
+        display: block;
+        color: #1a4277;
+    }
+    label:hover {
+        color: #000;
+    }
+    input {
+        vertical-align: middle;
+    }
+    #outStep {
+        width: 16px;
+    }
+    #ddlVoiceName {
+        width: 140px;
+    }
+    #rngStep {
+        width: 100px;
+    }
+</style>
+
+<div class="popup-body">
+
+    <h5>Chime Clock setup</h5>
+
+    <div class="controls">
+
+        <label for="rngVolume">Volume <input type="range" id="rngVolume" min="0" max="1" value="0.2" step="0.01"/></label>
+
+        <label for="chkMute"><input type="checkbox" id="chkMute"/> Mute clock</label>
+
+        <label for="chkTTS"><input type="checkbox" id="chkTTS"/> Say it</label>
+
+        <label id="ddlVoiceNameLabel" for="ddlVoiceName" style="display: none;">
+            Voice
+            <select id="ddlVoiceName"></select>
+        </label>
+
+        <label for="rngStep">
+            Interval
+            <input id="rngStep" type="range" step="1" min="0" max="10" value="8"/>
+            <input id="outStep" type="text" readonly value="15"/>
+        </label>
+
+    </div>
+
+</div>
+
+<script type="application/javascript" src="popup.js"></script>

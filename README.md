@@ -1,2 +1,2 @@
 # chime-clock
-Authentic chiming clock, google-chrome web browser extension.
+Retro chiming clock unobtrusive background sound, google-chrome web browser extension.
